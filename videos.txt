@@ -2,4 +2,7 @@
 - Sección 2 | Software necesario e introducción
 	- Instalación de JRE y Eclipse
 	- Introducción
-- Sección 3 | 
+- Sección 3 | Fundamentos y estructuras básicas del lenguaje
+	- Introducción a la sección
+	- Estructuras principales I. Anatomía de un programa Java
+	- Estructuras principales II. Tipos de datos y variables
