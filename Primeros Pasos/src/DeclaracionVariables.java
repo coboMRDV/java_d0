@@ -1,5 +1,5 @@
 
-public class DeclaraciónVariables {
+public class DeclaracionVariables {
 
 	public static void main(String[] args) {
 		int edadMaria, edadPedro, edadLuis, edadSandra;
@@ -19,4 +19,3 @@ public class DeclaraciónVariables {
 }
 
 
-A
