@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"com.cursojava.poo","c":"Vehiculo","l":"getColor()"},{"p":"com.cursojava.poo","c":"Vehiculo","l":"setColor(String)","url":"setColor(java.lang.String)"},{"p":"com.cursojava.poo","c":"Vehiculo","l":"toString()"},{"p":"com.cursojava.poo","c":"Vehiculo","l":"Vehiculo()","url":"%3Cinit%3E()"}]
