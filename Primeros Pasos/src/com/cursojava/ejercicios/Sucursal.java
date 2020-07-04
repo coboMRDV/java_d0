@@ -7,6 +7,12 @@ public class Sucursal {
 	String ciudad;
 	
 //	Constructor
+	/**
+	 * Construye un objeto de la clase sucursal
+	 * @param numSucursal numero de la sucursal 
+	 * @param direccion dirección del envío
+	 * @param ciudad del envío
+	 */
 	public Sucursal(int numSucursal, String direccion, String ciudad) {
 		this.numSucursal = numSucursal;
 		this.direccion = direccion;
@@ -22,7 +28,7 @@ public class Sucursal {
 	 * El precio aumenta en 10 euros si la prioridad es alta
 	 * El precio aumenta en 20 euros si la prioridad es urgente
 	 * 
-	 * @param paqueteParaEnvio
+	 * @param paquete ParaEnvio paquete para enviar
 	 */
 	public double getPrecio(Paquete paquete) {
 		double precioInicial = paquete.peso * 3;
@@ -49,18 +55,36 @@ public class Sucursal {
 	
 	
 //	Metodos Getters
+	/**
+	 * Devuelve el número de sucursal
+	 * @return int numero sucursal
+	 */
 	public int getNumSucursal() {
 		return numSucursal;
 	}
 	
+	/**
+	 * Devuelve la dirección
+	 * @return String dirección
+	 */
 	public String getDireccion() {
 		return direccion;
 	}
 	
+	/**
+	 * Devuelve la ciudad
+	 * @return String ciudad
+	 */
 	public String getCiudad() {
 		return ciudad;
 	}
 	
+	/**
+	 * Crear un String con un formato adecuando
+	 * para mostrar por consola
+	 * @param paquete del envío
+	 * @return String con los datos
+	 */
 	public String getDatos(Paquete paquete) {
 		return 
 				"==========Datos Sucursal=========\n" +
