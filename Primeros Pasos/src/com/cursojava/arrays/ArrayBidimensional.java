@@ -1,5 +1,4 @@
 package com.cursojava.arrays;
-import java.util.Random;
 
 public class ArrayBidimensional {
 

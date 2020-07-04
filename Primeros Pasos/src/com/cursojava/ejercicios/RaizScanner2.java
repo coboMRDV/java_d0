@@ -15,6 +15,7 @@ public class RaizScanner2 {
 		int num = sc.nextInt();
 		
 		System.out.println("La raíz de " + num + " es = " + Math.sqrt(num));
+		sc.close();
 	}
 
 }
