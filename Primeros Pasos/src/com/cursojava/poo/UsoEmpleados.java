@@ -1,59 +1,96 @@
 package com.cursojava.poo;
 
+import java.util.GregorianCalendar;
+
 public class UsoEmpleados {
 
+
 	public static void main(String[] args) {
-		Empleado empleado1 = new Empleado("Ana");
-		Empleado empleado2 = new Empleado("Antonio");
-		Empleado empleado3 = new Empleado("María");
-		Empleado empleado4 = new Empleado("Jorge");
 		
-//		System.out.println(empleado1.getDatosEmpleado());
+		Empleado antonio = new Empleado("Antonio", 2300.5, 2005, 7, 15);
+		Jefe ana = new Jefe("Ana", 2900, 2008, 8, 9);
 		
-		empleado1.setSeccion("RRHH");
+		ana.setIncentivo(300.5);
 		
-		System.out.println(empleado1.getDatosEmpleado());
-		System.out.println(empleado2.getDatosEmpleado());
-		System.out.println(empleado3.getDatosEmpleado());
-		System.out.println(empleado4.getDatosEmpleado());
+		System.out.println(ana.getSueldo());
 		
-		System.out.println(Empleado.getIdSiguiente());
-						
+		
 	}
 
 }
 
 
+
+
  class Empleado{
-	
+//	Propiedades
 	private final String nombre;
-	private String seccion;
 	private int id;
 	private static int idSiguiente = 1;
+	private double sueldo;
+	private GregorianCalendar calendario;
+	
 		
-	public Empleado(String nombre) {
-		this.nombre = nombre;
-		this.seccion = "Administración";
+//	Constructor
+	public Empleado(String nombre, double sueldo, int anio, int mes, int dia) {
 		id = idSiguiente;
-		
-		Empleado.idSiguiente ++;
-	}
-		
-	public void setSeccion(String seccion) {
-		this.seccion = seccion;
+		this.nombre = nombre;
+		this.sueldo = sueldo;
+		calendario = new GregorianCalendar(anio, mes, dia);
+		idSiguiente ++;
 	}
 	
+//	getIdSiguiente
 	public static String getIdSiguiente() {
 		return "\n***ID del siguiente empleado: " + idSiguiente + "***";
 	}
 	
+//	getSueldo
+	public double getSueldo() {
+		return sueldo;
+	}
+	
+//	getFechaAlta
+	public GregorianCalendar getFechaAlta() {
+		return calendario;
+	}
+	
+//	getDatosEmpleado
 	public String getDatosEmpleado() {
-		return "ID: " + id + " \t| " + "Nombre: " + nombre + " | Sección: " + seccion ;
-		
-		
-//				"ID:\t\t" 		+ id + "\n" +
-//				"Nombre:\t\t" 	+ nombre + "\n" +
-//				"Sección:\t" 	+ seccion + "\n"+
-//				"===============================";
+		return "ID: " + id + " \t| " + "Nombre: " + nombre ;
+
 		}
+	
+//	setSueldo
+	public void setSubeSueldo(double porcentaje) {
+		double aumento = sueldo * porcentaje / 100;
+		sueldo += aumento;
+	}
 }
+ 
+// ============== FIN CLASE EMPLEADO =================//
+ 
+ class Jefe extends Empleado {
+//	 Propiedades
+	 private double incentivo;
+	 
+	 
+//	 Constructor
+	public Jefe(String nombre, double sueldo, int anio, int mes, int dia) {
+		super(nombre, sueldo, anio, mes, dia);
+		
+	}
+	
+//	setIncentivo
+	public void setIncentivo(double b) {
+		incentivo = b;
+	}
+	
+//	getSueldo
+	@Override
+	public double getSueldo() {
+		double sueldoJefe = super.getSueldo();
+		return sueldoJefe + incentivo;
+	}
+
+ }

@@ -18,14 +18,12 @@ public class UsoColegio {
 		Cervantes.nuevoAlumno("Ana", 5);
 		Cervantes.nuevoAlumno("Antonio", 7);
 		Cervantes.nuevoAlumno("María", 3);
-				
+			
 		Cervantes.expulsaAlumno("Antonio");
 		
 		Cervantes.setNotaMedia("María",  8);
+			
 		
-		
-		
-		System.out.println(SanJavier.getTodosAlumnos());
 		System.out.println(Cervantes.getTodosAlumnos());
 		
 	}
