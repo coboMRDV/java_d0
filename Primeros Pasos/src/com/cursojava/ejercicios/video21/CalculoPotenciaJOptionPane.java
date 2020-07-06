@@ -1,4 +1,4 @@
-package com.cursojava.ejercicios;
+package com.cursojava.ejercicios.video21;
 import javax.swing.JOptionPane;
 /*
 Modifica el programa del ejercicio anterior para reducir lo máximo posible el nº de líneas de

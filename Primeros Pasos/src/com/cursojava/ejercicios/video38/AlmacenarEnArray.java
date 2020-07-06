@@ -1,4 +1,4 @@
-package com.cursojava.ejercicios;
+package com.cursojava.ejercicios.video38;
 
 import javax.swing.JOptionPane;
 

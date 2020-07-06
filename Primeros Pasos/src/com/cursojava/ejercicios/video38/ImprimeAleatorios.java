@@ -1,4 +1,4 @@
-package com.cursojava.ejercicios;
+package com.cursojava.ejercicios.video38;
 
 /*
  * En este ejercicio debes crear un array de 100 elementos que guarde en cada una de las

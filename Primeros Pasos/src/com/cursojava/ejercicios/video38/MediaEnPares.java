@@ -1,4 +1,4 @@
-package com.cursojava.ejercicios;
+package com.cursojava.ejercicios.video38;
 /*En este ejercicio, se pide al usuario que introduzca 10 números enteros por consola. Los
 números se almacenarán en un array y el programa calculará la media de los números
 introducidos en las posiciones pares del array. (Debes utilizar el operador módulo “%”).*/

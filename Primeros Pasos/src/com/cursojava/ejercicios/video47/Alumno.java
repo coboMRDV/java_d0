@@ -1,4 +1,4 @@
-package com.cursojava.ejercicios;
+package com.cursojava.ejercicios.video47;
 
 /**
  * Alumno.java Crea alumnos de un colegio

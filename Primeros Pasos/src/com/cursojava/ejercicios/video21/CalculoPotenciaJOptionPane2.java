@@ -1,4 +1,4 @@
-package com.cursojava.ejercicios;
+package com.cursojava.ejercicios.video21;
 import javax.swing.JOptionPane;
 /*
 Crea una clase con el nombre de CalculoPotenciaJOptionPane. Al ejecutar el programa nos debe

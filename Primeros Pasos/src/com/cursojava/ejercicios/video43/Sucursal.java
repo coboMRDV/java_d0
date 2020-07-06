@@ -1,4 +1,4 @@
-package com.cursojava.ejercicios;
+package com.cursojava.ejercicios.video43;
 
 public class Sucursal {
 //	Propiedades

@@ -1,4 +1,4 @@
-package com.cursojava.ejercicios;
+package com.cursojava.ejercicios.video21;
 import java.util.Scanner;
 
 /*

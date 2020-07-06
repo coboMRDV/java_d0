@@ -15,7 +15,7 @@ public class UsoVehiculos {
 
 		System.out.println(miCoche2.getExtra());
 
-		Vehiculo moto1 = new Vehiculo(2);
+//		Vehiculo moto1 = new Vehiculo(2);
 
 		System.out.println(miCoche.getDatosVehiculo());
 		System.out.println(miCoche2.getDatosVehiculo());

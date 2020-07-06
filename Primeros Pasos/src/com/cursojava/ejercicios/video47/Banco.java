@@ -1,4 +1,4 @@
-package com.cursojava.ejercicios;
+package com.cursojava.ejercicios.video47;
 
 /*En este ejercicio se trata de crear una clase capaz de crear objetos de tipo “Cuenta Corriente”
 como si de un banco se tratase. La clase tendrá el nombre de “CuentaCorriente” y construirá

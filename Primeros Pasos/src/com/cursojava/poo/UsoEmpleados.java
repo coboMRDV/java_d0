@@ -7,19 +7,38 @@ public class UsoEmpleados {
 
 	public static void main(String[] args) {
 		
-		Empleado antonio = new Empleado("Antonio", 2300.5, 2005, 7, 15);
-		Jefe ana = new Jefe("Ana", 2900, 2008, 8, 9);
+//		Empleado antonio = new Empleado("Antonio", 2300.5, 2005, 7, 15);
+//		Jefe ana = new Jefe("Ana", 2900, 2008, 8, 9);
+//		
+//		ana.setIncentivo(300.5);
+//		
+//		System.out.println(ana.getSueldo());
 		
-		ana.setIncentivo(300.5);
+		Jefe juan = new Jefe("Juan", 8000, 2013, 8, 5);
+		juan.setIncentivo(200);
 		
-		System.out.println(ana.getSueldo());
+		Empleado[] empleados = new Empleado[6];
 		
+		empleados[0] = new Empleado("Antonio", 2300.5, 2005, 7, 15);
+		empleados[1] = new Empleado("Carlos", 5000.5, 2007, 6, 15);
+		empleados[2] = new Empleado("María", 2500.5, 200, 11, 7);
+		empleados[3] = new Empleado("Ana", 7000, 2009, 5, 3);
+		empleados[4] = juan;
+		empleados[5] = new Jefe("Isabel", 8000, 2007, 4, 2);
+		
+		Jefe isabel = (Jefe)empleados[5];
+		isabel.setIncentivo(500);
+				
+//		Empleado patricia = new Jefe("Patricia", 2500, 2007, 5, 6);
+//		Jefe patriciaDirectora = (Jefe) patricia ;
+						
+		for(Empleado e : empleados) {
+			System.out.println(e.getDatosEmpleado() + " | Saldo: " + e.getSueldo());
+		}
 		
 	}
 
 }
-
-
 
 
  class Empleado{
@@ -57,7 +76,7 @@ public class UsoEmpleados {
 	
 //	getDatosEmpleado
 	public String getDatosEmpleado() {
-		return "ID: " + id + " \t| " + "Nombre: " + nombre ;
+		return "ID: " + id + " | " + "Nombre: " + nombre ;
 
 		}
 	
