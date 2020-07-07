@@ -32,8 +32,17 @@ public class UsoEmpleados {
 //		Empleado patricia = new Jefe("Patricia", 2500, 2007, 5, 6);
 //		Jefe patriciaDirectora = (Jefe) patricia ;
 						
+//		ID | Nombre | Sueldo
+		
+		System.out.println(String.format(
+				" %s | %-20s | %-10s", "ID", "Nombre", "Sueldo"));
+		System.out.println(
+				"====================================");
+		
+		
 		for(Empleado e : empleados) {
-			System.out.println(e.getDatosEmpleado() + " | Saldo: " + e.getSueldo());
+			System.out.println(e.getDatosEmpleado() + " " + e.getSueldo());
+			
 		}
 		
 	}
@@ -76,7 +85,11 @@ public class UsoEmpleados {
 	
 //	getDatosEmpleado
 	public String getDatosEmpleado() {
-		return "ID: " + id + " | " + "Nombre: " + nombre ;
+		
+		
+//		return "ID: " + id + " | " + "Nombre: " + nombre ;
+		return  String.format(" %02d | %-20s |", id, nombre);
+		
 
 		}
 	
@@ -89,7 +102,7 @@ public class UsoEmpleados {
  
 // ============== FIN CLASE EMPLEADO =================//
  
- class Jefe extends Empleado {
+  class Jefe extends Empleado {
 //	 Propiedades
 	 private double incentivo;
 	 
@@ -113,3 +126,4 @@ public class UsoEmpleados {
 	}
 
  }
+ 
