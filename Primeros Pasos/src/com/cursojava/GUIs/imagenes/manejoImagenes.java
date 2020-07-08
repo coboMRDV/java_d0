@@ -2,12 +2,9 @@ package com.cursojava.GUIs.imagenes;
 
 import java.awt.Color;
 import java.awt.Graphics;
-import java.awt.Graphics2D;
 import java.awt.Image;
 import java.io.File;
-import java.io.IOException;import java.util.Observable;
-import java.util.Observer;
-
+import java.io.IOException;
 import javax.imageio.ImageIO;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -16,7 +13,7 @@ public class manejoImagenes {
 
 	public static void main(String[] args) {
 		
-		Frame frame = new Frame();
+		new Frame();
 		
 	}
 
@@ -41,8 +38,6 @@ class Frame extends JFrame{
 
 
 class Panel extends JPanel{
-	private Image img;
-	
 	public Panel() {
 //		this.setBackground(new Color(255, 255, 255));
 		this.setBackground(new Color(40, 40, 40));

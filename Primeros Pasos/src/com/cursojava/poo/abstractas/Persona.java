@@ -70,7 +70,6 @@ class Empleado extends Persona implements Comparable, ParaTrabajadores{
 }//	CLASE JEFE ==================================
 class Jefe extends Empleado implements ParaJefes{
 		
-	private double incentivo;
 	private String cargo;
 	
 	public Jefe(String nombre, Date fechaAlta, double sueldo) {
@@ -79,7 +78,6 @@ class Jefe extends Empleado implements ParaJefes{
 	}
 	
 	public void setIncentivo(double incentivo) {
-		this.incentivo = incentivo;
 	}
 	
 	public String getDescripcion() {

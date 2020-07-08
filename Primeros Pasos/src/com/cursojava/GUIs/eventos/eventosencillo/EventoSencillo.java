@@ -2,12 +2,9 @@ package com.cursojava.GUIs.eventos.eventosencillo;
 
 import java.awt.Color;
 import java.awt.Font;
-import java.awt.Graphics;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.EventObject;
 
-import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
@@ -38,9 +35,9 @@ class Panel extends JPanel implements ActionListener {
 	/**
 	 * declara componentes
 	 */
-	Boton btnRojo = new Boton("Rojo");
-	Boton btnVerde = new Boton("Verde");
-	Boton btnAzul = new Boton("Azul");
+	CButton btnRojo = new CButton("Rojo");
+	CButton btnVerde = new CButton("Verde");
+	CButton btnAzul = new CButton("Azul");
 	Font font = new Font("InputMono Thin", Font.PLAIN, 18);
 
 	public Panel() {
@@ -54,15 +51,12 @@ class Panel extends JPanel implements ActionListener {
 		 */
 		btnRojo.addActionListener(this);
 		btnRojo.setPadding(10, 40, 10, 40);
-//		btnRojo.setFont(font);
 
 		btnVerde.addActionListener(this);
 		btnVerde.setPadding(10, 40, 10, 40);
-//		btnVerde.setFont(font);
 
 		btnAzul.addActionListener(this);
 		btnAzul.setPadding(10, 40, 10, 40);
-//		btnAzul.setFont(font);
 		
 		/**
 		 * agrega componentes
