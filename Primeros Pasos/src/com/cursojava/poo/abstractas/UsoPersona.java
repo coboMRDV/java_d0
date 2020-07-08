@@ -40,7 +40,7 @@ public class UsoPersona {
 			System.out.println(e.getDescripcion());
 		}
 		
-		Jefe manuel = new Jefe("Manuel", new Date(173890471), 5000);
+//		Jefe manuel = new Jefe("Manuel", new Date(173890471), 5000);
 		Empleado sonia = new Empleado("Sonia", new Date(78907890), 3000);
 		
 		System.out.println(String.format(
