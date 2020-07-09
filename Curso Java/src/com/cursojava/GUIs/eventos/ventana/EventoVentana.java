@@ -1,4 +1,4 @@
-package com.cursojava.GUIs.eventoVentana;
+package com.cursojava.GUIs.eventos.ventana;
 
 import java.awt.Color;
 import java.awt.event.WindowEvent;
