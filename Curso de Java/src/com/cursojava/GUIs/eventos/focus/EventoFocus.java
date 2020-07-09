@@ -36,6 +36,7 @@ class Panel extends JPanel{
 	CButton btn2 = new CButton("Botón 2");
 	CButton btn3 = new CButton("Botón 3");
 	CButton btn4 = new CButton("Botón 4");
+//	test
 	
 	public Panel() {
 		this.add(btn1);
