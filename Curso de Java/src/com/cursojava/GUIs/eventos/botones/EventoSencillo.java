@@ -21,6 +21,11 @@ public class EventoSencillo {
 }
 
 class Frame extends JFrame {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -5064797555075354708L;
+
 	public Frame() {
 		this.setSize(700, 300);
 		this.setLocationRelativeTo(null);
@@ -32,6 +37,10 @@ class Frame extends JFrame {
 }
 
 class Panel extends JPanel implements ActionListener {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -2309256516110594356L;
 	/**
 	 * declara componentes
 	 */

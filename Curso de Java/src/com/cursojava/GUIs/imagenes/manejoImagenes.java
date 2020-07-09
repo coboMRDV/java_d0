@@ -22,6 +22,11 @@ public class manejoImagenes {
 
 class Frame extends JFrame{
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -4407578706698123534L;
+
 	public Frame() {
 		this.setSize(840, 439);
 		this.setLocationRelativeTo(null);
@@ -38,6 +43,11 @@ class Frame extends JFrame{
 
 
 class Panel extends JPanel{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 5954947920707349365L;
+
 	public Panel() {
 //		this.setBackground(new Color(255, 255, 255));
 		this.setBackground(new Color(40, 40, 40));

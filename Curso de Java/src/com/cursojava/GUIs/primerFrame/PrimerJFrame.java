@@ -23,6 +23,11 @@ public class PrimerJFrame {
 //	CLASE VENTANA===============================
 class Ventana extends JFrame{
 		
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 4391510935554321908L;
+
 	public Ventana() {
 //		setBounds(600, 350, 450, 450);
 //		setResizable(false);

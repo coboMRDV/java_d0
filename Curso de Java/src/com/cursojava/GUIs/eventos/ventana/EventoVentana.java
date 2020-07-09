@@ -17,6 +17,11 @@ public class EventoVentana {
 
 class Frame extends JFrame{
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 5809448033111602109L;
+
 	public Frame() {
 		this.setSize(500, 500);
 		this.setLocationRelativeTo(null);

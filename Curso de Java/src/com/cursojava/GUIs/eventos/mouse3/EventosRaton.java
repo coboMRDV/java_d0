@@ -9,12 +9,19 @@ import javax.swing.JFrame;
 public class EventosRaton {
 	public static void main(String[] args) {
 		Frame frame = new Frame();
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
 		
 	}
 }
 
 
 class Frame extends JFrame{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -225127116377342702L;
+
 	public Frame() {
 		this.setSize(800, 600);
 		this.setLocationRelativeTo(null);
@@ -22,7 +29,6 @@ class Frame extends JFrame{
 		
 		this.addMouseListener(new MouseEvents());
 		
-		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setVisible(true);
 	}
 }

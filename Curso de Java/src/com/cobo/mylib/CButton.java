@@ -2,6 +2,8 @@ package com.cobo.mylib;
 
 import java.awt.Color;
 import java.awt.Font;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 
 import javax.swing.BorderFactory;
 import javax.swing.JButton;
@@ -15,6 +17,10 @@ import javax.swing.JButton;
  */
 public class CButton extends JButton {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -1410906471974689420L;
 	String nombre;
 
 	/**
@@ -26,9 +32,36 @@ public class CButton extends JButton {
 	public CButton(String text) {
 		super(text);
 		this.setFont(new Font("Consolas", Font.PLAIN, 14));
-		this.setBorder(BorderFactory.createEmptyBorder(6, 12, 6, 12));
+		this.setBorder(BorderFactory.createEmptyBorder(14, 28, 14, 28));
 		this.setForeground(new Color(255, 255, 255));
 		this.setBackground(new Color(19, 132, 150));
+		
+		this.addMouseListener(new MouseListener() {
+			
+			@Override
+			public void mouseReleased(MouseEvent e) {
+			}
+			
+			@Override
+			public void mousePressed(MouseEvent e) {
+			}
+			
+			@Override
+			public void mouseExited(MouseEvent e) {
+				CButton b = (CButton)e.getSource();
+				b.setBackground(new Color(19, 132, 150));
+			}
+			
+			@Override
+			public void mouseEntered(MouseEvent e) {
+				CButton b = (CButton)e.getSource();
+				b.setBackground(new Color(41, 217, 244));
+			}
+			
+			@Override
+			public void mouseClicked(MouseEvent e) {
+			}
+		});
 	}
 
 	/**

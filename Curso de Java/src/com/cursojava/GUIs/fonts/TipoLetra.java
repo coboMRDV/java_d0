@@ -20,6 +20,11 @@ public class TipoLetra {
 
 class Ventana extends JFrame {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -6778889942300763596L;
+
 	public Ventana() {
 		/**
 		 * tamaño y posición
@@ -41,6 +46,10 @@ class Ventana extends JFrame {
 
 class Panel extends JPanel {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -8568331061536305851L;
 	String[] fuentesDisponibles;
 	String fuente;
 

@@ -16,6 +16,11 @@ public class EscribiendoMarco {
 
 class Frame extends JFrame {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -7678707132185011764L;
+
 	public Frame() {
 		setSize(500, 350);
 		setLocationRelativeTo(null);
@@ -30,6 +35,11 @@ class Frame extends JFrame {
 
 class Panel extends JPanel {
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 6422156430693480925L;
+
 	public Panel() {
 		setBackground(new Color(51, 51, 51));
 		

@@ -3,17 +3,13 @@ package com.cursojava.GUIs.eventos.teclado;
 import java.awt.Color;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
-import java.awt.event.WindowAdapter;
-
 import javax.swing.JFrame;
-import javax.swing.JPanel;
-
-import com.cobo.mylib.CButton;
 
 public class EventoTeclado {
 
 	public static void main(String[] args) {
 		Frame frame = new Frame();
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 	}
 
@@ -21,6 +17,11 @@ public class EventoTeclado {
 
 class Frame extends JFrame{
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -2016622262086949748L;
+
 	public Frame() {
 		this.setSize(800, 600);
 		this.setLocationRelativeTo(null);
@@ -28,7 +29,6 @@ class Frame extends JFrame{
 		
 		this.addKeyListener(new KeyEvents());
 	
-		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setVisible(true);
 				
 	}

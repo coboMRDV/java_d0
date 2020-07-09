@@ -1,4 +1,4 @@
-package com.cursojava.GUIs.eventos.focus;
+package com.cursojava.GUIs.eventos.focus3;
 
 import java.awt.Color;
 import java.awt.Graphics;
@@ -67,37 +67,22 @@ class Panel extends JPanel {
 		add(txt2);
 
 	}
-	
-	
-	class ComFocusEvents implements FocusListener{
-		
-		@Override
-		public void focusGained(FocusEvent e) {
-			
-			if(e.getSource() == txt1) {
-				System.out.println("Focus en txt1");
-			}else {
-				System.out.println("Focus en txt2");
-				
-			}			
-			
-			System.out.println();
-		}
-		
-		@Override
-		public void focusLost(FocusEvent e) {
-			if(e.getSource() == txt1) {
-				System.out.println("txt1 pierde el foco");
-			}else {
-				System.out.println("txt2 pierde el foco");
-				
-			}
-			
-		}
-	}
-
 
 }
 
 
+class ComFocusEvents implements FocusListener{
+	
+	@Override
+	public void focusGained(FocusEvent e) {
+		JTextField tf = (JTextField)e.getSource();
+		System.out.println("Focus en " + tf.getName());
+	}
+	
+	@Override
+	public void focusLost(FocusEvent e) {
+		JTextField tf = (JTextField)e.getSource();
+		System.out.println(tf.getName() + " pierde el foco.\n");
+	}
+}
 
