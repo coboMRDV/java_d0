@@ -21,10 +21,10 @@ public class CButton extends JButton {
 	 * Constructor de la clase Boton Recibe como parámetro el nombre que se mostrará
 	 * en el botón
 	 * 
-	 * @param nombre el nombre del botón
+	 * @param text el nombre del botón
 	 */
-	public CButton(String nombre) {
-		this.setText(nombre);
+	public CButton(String text) {
+		super(text);
 		this.setFont(new Font("Consolas", Font.PLAIN, 14));
 		this.setBorder(BorderFactory.createEmptyBorder(6, 12, 6, 12));
 		this.setForeground(new Color(255, 255, 255));

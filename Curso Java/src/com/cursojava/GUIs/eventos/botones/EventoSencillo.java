@@ -1,4 +1,4 @@
-package com.cursojava.GUIs.eventos.eventosencillo;
+package com.cursojava.GUIs.eventos.botones;
 
 import java.awt.Color;
 import java.awt.Font;
