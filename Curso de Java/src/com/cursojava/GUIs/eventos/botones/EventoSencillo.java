@@ -47,6 +47,7 @@ class Panel extends JPanel implements ActionListener {
 	CButton btnRojo = new CButton("Rojo");
 	CButton btnVerde = new CButton("Verde");
 	CButton btnAzul = new CButton("Azul");
+		
 	Font font = new Font("InputMono Thin", Font.PLAIN, 18);
 
 	public Panel() {
@@ -103,13 +104,3 @@ class Panel extends JPanel implements ActionListener {
 	}
 
 }
-
-//class Boton extends JButton {
-//	String nombre; 
-//
-//	public Boton(String nombre) {
-//		this.setText(nombre);
-//		this.setFont(new Font("InputMono Thin", Font.PLAIN, 18));
-//	}
-//
-//}

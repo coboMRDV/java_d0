@@ -1,7 +1,9 @@
-package com.cursojava.GUIs.eventos.multiplesFuentes;
+package com.cursojava.GUIs.eventos.multiplesFuentes.copy;
 
 import java.awt.Color;
 import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
 import javax.swing.AbstractAction;
 import javax.swing.Action;
 import javax.swing.ActionMap;
@@ -11,7 +13,8 @@ import javax.swing.JComponent;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.KeyStroke;
-import java.awt.FlowLayout;
+
+import com.cobo.mylib.CButton;
 
 
 public class VariasFuentes {
@@ -54,18 +57,30 @@ class Panel extends JPanel {
 
 	public Panel() {
 		this.setBackground(new Color(50, 50, 50));
-		
+				
 		ButtonEvents actionRojo = new ButtonEvents("Rojo", new Color(100, 40, 40));
 		ButtonEvents actionVerde= new ButtonEvents("Verde", new Color(40, 100, 40));
 		ButtonEvents actionAzul = new ButtonEvents("Azul", new Color(40, 40, 100));
 		
+		
 		JButton btnRojo = new JButton(actionRojo);
 		JButton btnVerde= new JButton(actionVerde);
 		JButton btnAzul = new JButton(actionAzul);
+		CButton btnNaranja = new CButton("Naranja");
+		btnNaranja.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				setBackground(new Color(255, 131, 0));
+			}
+		});
+		
 		
 		this.add(btnRojo);
 		this.add(btnVerde);
 		this.add(btnAzul);
+		this.add(btnNaranja);
+		
 			
 		/**
 		 * CREACIÓN SHORTCUTS
@@ -86,6 +101,18 @@ class Panel extends JPanel {
 		/** VERDE **/
 		inputMap.put(KeyStroke.getKeyStroke("ctrl V"), "Fondo Verde");
 		actionMap.put("Fondo Verde", actionVerde);
+		
+		
+		/** NARANJA **/
+		inputMap.put(KeyStroke.getKeyStroke("ctrl N"), "Fondo Naranja");
+		actionMap.put("Fondo Naranja", new AbstractAction() {
+			
+			@Override
+			public void actionPerformed(ActionEvent arg0) {
+				System.out.println("Naranja");
+				setBackground(new Color(255, 131, 0));
+			}
+		});
 		
 		
 	}
