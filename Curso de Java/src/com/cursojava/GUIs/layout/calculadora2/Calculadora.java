@@ -2,7 +2,6 @@ package com.cursojava.GUIs.layout.calculadora2;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
-import java.awt.Component;
 import java.awt.Font;
 import java.awt.GridLayout;
 
@@ -41,6 +40,11 @@ public class Calculadora {
 
 class FrameCalculadora extends JFrame{
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -6972573558782855991L;
+
 	public FrameCalculadora() {
 		this.setSize(300, 350);
 		this.setLocationRelativeTo(null);
@@ -58,6 +62,10 @@ class FrameCalculadora extends JFrame{
 
 class PanelSuperior extends JPanel{
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 5526145040605614370L;
 	JTextField txtPanel = new JTextField();
 	
 	public PanelSuperior() {
@@ -75,6 +83,11 @@ class PanelSuperior extends JPanel{
 }
 
 class PanelNumeros extends JPanel{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -5459612803572944220L;
+
 	public PanelNumeros() {
 		this.setBackground(new Color(55,55,55));
 		this.setBorder(BorderFactory.createEmptyBorder(4, 4, 4, 4));

@@ -20,6 +20,11 @@ public class Border {
 
 class Frame extends JFrame {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 7083625945609796337L;
+
 	public Frame() {
 		this.setSize(600, 480);
 		this.setLocationRelativeTo(null);
@@ -31,6 +36,11 @@ class Frame extends JFrame {
 }
 
 class Panel extends JPanel {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 5720425875171161844L;
 
 	public Panel() {
 		this.setBackground(new Color(55, 55, 55));

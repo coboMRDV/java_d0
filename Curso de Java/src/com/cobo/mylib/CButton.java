@@ -2,6 +2,7 @@ package com.cobo.mylib;
 
 import java.awt.Color;
 import java.awt.Font;
+
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
@@ -36,7 +37,9 @@ public class CButton extends JButton {
 		this.setForeground(new Color(255, 255, 255));
 		this.setBackground(new Color(19, 132, 150));
 		
+		
 		this.addMouseListener(new MouseListener() {
+		
 			
 			@Override
 			public void mouseReleased(MouseEvent e) {
@@ -77,5 +80,7 @@ public class CButton extends JButton {
 	public void setPadding(int top, int right, int bottom, int left) {
 		this.setBorder(BorderFactory.createEmptyBorder(top, right, bottom, left));
 	}
+
+
 
 }
