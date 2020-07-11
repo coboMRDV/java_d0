@@ -1,4 +1,4 @@
-package com.cursojava.GUIs.componentesSwing.cbox;
+package com.cursojava.GUIs.componentesSwing.cbox2;
 
 import java.awt.BorderLayout;
 import java.awt.Font;
@@ -37,7 +37,7 @@ class Frame extends JFrame {
 		this.add(new BottomPanel(), BorderLayout.SOUTH);
 	}
 
-//	
+//	***		TOP PANEL	 ***	//
 	class TopPanel extends JPanel {
 
 		public TopPanel() {
@@ -49,7 +49,7 @@ class Frame extends JFrame {
 		}
 
 	}
-
+//	***		TOP PANEL	 ***	//
 	private class BottomPanel extends JPanel {
 		JCheckBox box1, box2;
 
