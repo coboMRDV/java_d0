@@ -1,4 +1,4 @@
-package com.cursojava.GUIs.componentesSwing.eventosJTextField;
+package com.cursojava.GUIs.componentesSwing.eventosjtextfield;
 
 import java.awt.Color;
 import java.awt.Font;
