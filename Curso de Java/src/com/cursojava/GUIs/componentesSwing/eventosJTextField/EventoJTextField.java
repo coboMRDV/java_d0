@@ -22,6 +22,11 @@ public class EventoJTextField {
 
 class Frame extends JFrame {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	public Frame() {
 		this.setSize(600, 300);
 		this.setLocationRelativeTo(null);
@@ -35,6 +40,10 @@ class Frame extends JFrame {
 
 class Panel extends JPanel {
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	JTextField txt1 = new JTextField(20);
 	
 	public Panel() {

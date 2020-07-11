@@ -1,7 +1,6 @@
 package com.cursojava.GUIs.componentesSwing.cboxTest;
 
 import java.awt.BorderLayout;
-import java.awt.Color;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -26,6 +25,11 @@ public class CBoxTest {
 
 class Frame extends JFrame {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	public Frame() {
 		this.setSize(400, 280);
 		this.setLocationRelativeTo(null);
@@ -36,6 +40,10 @@ class Frame extends JFrame {
 }
 
 class Panel extends JPanel {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	JLabel lbl1;
 	private int fontStyle = 0;
 
@@ -59,7 +67,6 @@ class Panel extends JPanel {
 		cBoxes.add(c2);
 		c2.setFont(CbConstants.FONT_SANS);
 
-		
 		this.add(lbl1, BorderLayout.NORTH);
 		this.add(cBoxes, BorderLayout.SOUTH);
 	}
@@ -70,17 +77,18 @@ class Panel extends JPanel {
 		public void actionPerformed(ActionEvent e) {
 
 			JCheckBox clicked = (JCheckBox) e.getSource();
+
 			if (clicked.getText().equals("Negrita")) {
 				if (clicked.isSelected()) {
-					fontStyle += 1;
+					fontStyle += Font.BOLD;
 				} else {
-					fontStyle -= 1;
+					fontStyle -= Font.BOLD;
 				}
 			} else {
 				if (clicked.isSelected()) {
-					fontStyle += 2;
+					fontStyle += Font.ITALIC;
 				} else {
-					fontStyle -= 2;
+					fontStyle -= Font.ITALIC;
 				}
 			}
 

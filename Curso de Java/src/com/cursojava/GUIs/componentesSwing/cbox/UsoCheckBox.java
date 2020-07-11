@@ -23,6 +23,10 @@ public class UsoCheckBox {
 }
 
 class Frame extends JFrame {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private JLabel lbl1 = new JLabel("Lorem ipsum dolor sit amet");
 	private int initialFontStyle = 0;
 
@@ -40,6 +44,11 @@ class Frame extends JFrame {
 //	
 	class TopPanel extends JPanel {
 
+		/**
+		 * 
+		 */
+		private static final long serialVersionUID = 1L;
+
 		public TopPanel() {
 //		this.setBackground(new Color(55, 55, 55));/
 			lbl1.setFont(CbConstants.FONT_SANS);
@@ -51,6 +60,10 @@ class Frame extends JFrame {
 	}
 
 	private class BottomPanel extends JPanel {
+		/**
+		 * 
+		 */
+		private static final long serialVersionUID = 1L;
 		JCheckBox box1, box2;
 
 		private BottomPanel() {

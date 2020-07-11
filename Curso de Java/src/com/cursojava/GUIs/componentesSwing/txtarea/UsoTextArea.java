@@ -1,7 +1,6 @@
 package com.cursojava.GUIs.componentesSwing.txtarea;
 
 import java.awt.Color;
-import java.awt.Insets;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -26,6 +25,11 @@ public class UsoTextArea {
 
 class Frame extends JFrame {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	public Frame() {
 		this.setSize(600, 300);
 		this.setLocationRelativeTo(null);
@@ -37,6 +41,10 @@ class Frame extends JFrame {
 }
 
 class Panel extends JPanel {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	JTextArea txtArea = new JTextArea(7, 48);
 	
 	public Panel() {
