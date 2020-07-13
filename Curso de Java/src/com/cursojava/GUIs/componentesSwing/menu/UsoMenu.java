@@ -5,7 +5,6 @@ import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import javax.swing.BorderFactory;
 import javax.swing.JFrame;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
@@ -24,6 +23,11 @@ public class UsoMenu {
 
 class Frame extends JFrame {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 9026930781287222544L;
+
 	public Frame() {
 		this.setSize(400, 300);
 		this.setLocationRelativeTo(null);
@@ -34,6 +38,10 @@ class Frame extends JFrame {
 }
 
 class Panel extends JPanel  {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 867280745153697519L;
 	JMenuBar menuBar;
 
 	public Panel() {

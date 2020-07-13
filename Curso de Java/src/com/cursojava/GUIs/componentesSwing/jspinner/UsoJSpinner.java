@@ -1,20 +1,11 @@
 package com.cursojava.GUIs.componentesSwing.jspinner;
 
-import java.awt.Color;
-import java.awt.Dimension;
-
-import javax.swing.BorderFactory;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JSpinner;
-import javax.swing.SpinnerModel;
 import javax.swing.SpinnerNumberModel;
-import javax.swing.SwingConstants;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
-
-import com.cobo.mylib.CbConstants;
-import com.cobo.mylib.CbFunctions;
 
 public class UsoJSpinner {
 
@@ -28,6 +19,11 @@ public class UsoJSpinner {
 
 class Frame extends JFrame {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -8110972000885534135L;
+
 	public Frame() {
 		this.setSize(400, 300);
 		this.setLocationRelativeTo(null);
@@ -38,6 +34,10 @@ class Frame extends JFrame {
 }
 
 class Panel extends JPanel {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -1987261903041687460L;
 	private final JSpinner jSpinner;
 	
 	public Panel() {

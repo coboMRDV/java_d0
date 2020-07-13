@@ -1,9 +1,7 @@
-package com.cursojava.GUIs.eventos.multiplesFuentes02;
+package com.cursojava.GUIs.componentesSwing.barraherramientas;
 
 import java.awt.Color;
 import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-
 import javax.swing.AbstractAction;
 import javax.swing.Action;
 import javax.swing.ActionMap;
@@ -55,30 +53,18 @@ class Panel extends JPanel {
 
 	public Panel() {
 		this.setBackground(new Color(50, 50, 50));
-				
-		ButtonEvents actionRojo = new ButtonEvents("Rojo", new Color(100, 40, 40));
-		ButtonEvents actionVerde= new ButtonEvents("Verde", new Color(40, 100, 40));
-		ButtonEvents actionAzul = new ButtonEvents("Azul", new Color(40, 40, 100));
 		
+		abstractAction actionRojo = new abstractAction("Rojo", new Color(100, 40, 40));
+		abstractAction actionVerde= new abstractAction("Verde", new Color(40, 100, 40));
+		abstractAction actionAzul = new abstractAction("Azul", new Color(40, 40, 100));
 		
 		JButton btnRojo = new JButton(actionRojo);
 		JButton btnVerde= new JButton(actionVerde);
 		JButton btnAzul = new JButton(actionAzul);
-		JButton btnNaranja = new JButton("Naranja");
-		btnNaranja.addActionListener(new ActionListener() {
-			
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				setBackground(new Color(255, 131, 0));
-			}
-		});
-		
 		
 		this.add(btnRojo);
 		this.add(btnVerde);
 		this.add(btnAzul);
-		this.add(btnNaranja);
-		
 			
 		/**
 		 * CREACIÓN SHORTCUTS
@@ -101,28 +87,11 @@ class Panel extends JPanel {
 		actionMap.put("Fondo Verde", actionVerde);
 		
 		
-		/** NARANJA **/
-		inputMap.put(KeyStroke.getKeyStroke("ctrl N"), "Fondo Naranja");
-		actionMap.put("Fondo Naranja", new AbstractAction() {
-			
-			/**
-			 * 
-			 */
-			private static final long serialVersionUID = 4935883527957193170L;
-
-			@Override
-			public void actionPerformed(ActionEvent arg0) {
-				System.out.println("Naranja");
-				setBackground(new Color(255, 131, 0));
-			}
-		});
-		
-		
 	}
 
-	class ButtonEvents extends AbstractAction {
+	class abstractAction extends AbstractAction {
 
-		public ButtonEvents(String nombre, Color bgColor) {
+		public abstractAction(String nombre, Color bgColor) {
 			this.putValue(Action.NAME, nombre);
 			this.putValue(Action.SHORT_DESCRIPTION, "Cambia el color del panel a " + nombre);
 			this.putValue("bgColor", bgColor);

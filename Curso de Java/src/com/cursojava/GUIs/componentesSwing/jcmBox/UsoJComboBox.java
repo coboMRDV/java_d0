@@ -17,7 +17,6 @@ import javax.swing.SwingConstants;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
-import com.cobo.mylib.CbConstants;
 import com.cobo.mylib.CbFunctions;
 
 public class UsoJComboBox {

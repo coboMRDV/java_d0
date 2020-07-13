@@ -14,11 +14,6 @@ import javax.swing.JMenuItem;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
-import javax.swing.text.Document;
-import javax.swing.text.StyledEditorKit;
-
-
-import com.cobo.mylib.CbFunctions;
 
 public class ProcesadorTextos {
 
@@ -32,6 +27,11 @@ public class ProcesadorTextos {
 
 class Frame extends JFrame {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 6565873777252085229L;
+
 	public Frame() {
 		this.setSize(600, 400);
 		this.setLocationRelativeTo(null);
@@ -43,6 +43,10 @@ class Frame extends JFrame {
 
 class Panel extends JPanel {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -7604771311283103676L;
 	private JMenuBar menuBar;
 	private JTextArea txtArea;
 	private JPanel topPanel;
@@ -187,18 +191,18 @@ class Panel extends JPanel {
 				fontSize = 28;
 			}else if(item.getText().equals("Negrita")) {
 				if(!esNegrita) {
-					fontStyle += font.BOLD;
+					fontStyle += Font.BOLD;
 					
 				}else {
-					fontStyle -= font.BOLD;
+					fontStyle -= Font.BOLD;
 				}
 				esNegrita = !esNegrita;
 			}else if(item.getText().equals("Cursiva")) {
 				if(!esCursiva) {
-					fontStyle += font.ITALIC;
+					fontStyle += Font.ITALIC;
 					
 				}else {
-					fontStyle -= font.ITALIC;
+					fontStyle -= Font.ITALIC;
 				}
 				esCursiva = !esCursiva;
 			}

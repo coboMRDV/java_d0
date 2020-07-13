@@ -18,6 +18,11 @@ public class UsoJSlider {
 
 class Frame extends JFrame {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -3714252924259807567L;
+
 	public Frame() {
 		this.setSize(800, 600);
 		this.setLocationRelativeTo(null);
@@ -28,8 +33,10 @@ class Frame extends JFrame {
 }
 
 class Panel extends JPanel {
-	private  JSlider jSlider;
-	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -7138969253411210880L;
 	public Panel() {
 		this.setBackground(new Color(55, 55, 55));
 		JSlider jSlider = new JSlider();

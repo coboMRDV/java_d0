@@ -25,6 +25,11 @@ public class ProcesadorTexto {
 
 class Frame extends JFrame {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -3825691280976089235L;
+
 	public Frame() {
 		this.setSize(600, 400);
 		this.setLocationRelativeTo(null);
@@ -35,6 +40,10 @@ class Frame extends JFrame {
 }
 
 class Panel extends JPanel {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -1322209913468321559L;
 	private final JPanel topPanel;
 	private final JScrollPane bottomPanel;
 	private final JMenuBar menuBar;
