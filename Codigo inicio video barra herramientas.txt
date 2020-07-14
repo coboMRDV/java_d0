@@ -1,0 +1,103 @@
+package com.cursojava.GUIs.componentesSwing.barraherramientas;
+
+import java.awt.Color;
+import java.awt.event.ActionEvent;
+import javax.swing.AbstractAction;
+import javax.swing.Action;
+import javax.swing.ActionMap;
+import javax.swing.InputMap;
+import javax.swing.JButton;
+import javax.swing.JComponent;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.KeyStroke;
+
+
+public class VariasFuentes {
+
+	public static void main(String[] args) {
+
+		Frame frame = new Frame();
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+		frame.setVisible(true);
+	}
+
+}
+
+class Frame extends JFrame {
+
+	JPanel panel;
+	
+	public Frame() {
+		this.setSize(480, 320);
+		this.setLocationRelativeTo(null);
+		
+		panel = new JPanel();
+
+		this.add(panel);
+
+	/*}
+}
+
+class Panel extends JPanel {
+
+
+	public Panel() {
+		this.setBackground(new Color(50, 50, 50));
+		
+		JButton btnRojo = new JButton(actionRojo);
+		JButton btnVerde= new JButton(actionVerde);
+		JButton btnAzul = new JButton(actionAzul);
+
+		
+		this.add(btnRojo);
+		this.add(btnVerde);
+		this.add(btnAzul);
+		
+		abstractAction actionRojo = new abstractAction("Rojo", new Color(100, 40, 40));
+		abstractAction actionVerde= new abstractAction("Verde", new Color(40, 100, 40));
+		abstractAction actionAzul = new abstractAction("Azul", new Color(40, 40, 100));
+		
+			
+
+		InputMap inputMap = getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW);
+		ActionMap actionMap = getActionMap();
+				
+		inputMap.put(KeyStroke.getKeyStroke("ctrl R"), "Fondo Rojo");
+		actionMap.put("Fondo Rojo", actionRojo);
+		
+		inputMap.put(KeyStroke.getKeyStroke("ctrl A"), "Fondo Azul");
+		inputMap.put(KeyStroke.getKeyStroke("ctrl D"), "Fondo Azul");
+		actionMap.put("Fondo Azul", actionAzul);
+			
+		
+		inputMap.put(KeyStroke.getKeyStroke("ctrl V"), "Fondo Verde");
+		actionMap.put("Fondo Verde", actionVerde);*/
+		
+		
+	}
+
+	class abstractAction extends AbstractAction {
+
+		public abstractAction(String nombre, Color bgColor) {
+			putValue(Action.NAME, nombre);
+			putValue(Action.SHORT_DESCRIPTION, "Cambia el color del panel a " + nombre);
+			putValue("bgColor", bgColor);
+		}
+
+
+		private static final long serialVersionUID = 4733914784665664200L;
+
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			Color color = (Color) getValue("bgColor");
+			panel.setBackground(color);
+			System.out.println("Botón " + getValue(Action.NAME) + " " + getValue(Action.SHORT_DESCRIPTION));
+
+		}
+
+	}
+	
+
+}

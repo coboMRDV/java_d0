@@ -1,4 +1,4 @@
-package com.cursojava.GUIs.componentesSwing.barraherramientas;
+package com.cursojava.GUIs.componentesSwing.menuemergente;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -56,7 +56,6 @@ class Frame extends JFrame {
 		
 		popupMenu.add(r);
 		popupMenu.add(v);
-		popupMenu.addSeparator();
 		popupMenu.add(a);
 		
 		panel.setComponentPopupMenu(popupMenu);

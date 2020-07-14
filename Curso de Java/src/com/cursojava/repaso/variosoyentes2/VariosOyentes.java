@@ -18,6 +18,7 @@ public class VariosOyentes {
 
 }
 
+@SuppressWarnings("serial")
 class Frame extends JFrame {
 
 	public Frame() {
@@ -29,6 +30,7 @@ class Frame extends JFrame {
 
 }
 
+@SuppressWarnings("serial")
 class Panel extends JPanel {
 
 	JButton btnNew, btnCloseAll;
