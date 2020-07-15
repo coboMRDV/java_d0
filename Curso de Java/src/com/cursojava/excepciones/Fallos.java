@@ -12,6 +12,7 @@ public class Fallos {
 		miMatriz[2] = -15;
 		miMatriz[3] = 92;
 		miMatriz[4] = 71;
+		
 
 		for (int i = 0; i < 5; i++) {
 			System.out.println("Posición " + i + " = " + miMatriz[i]);
@@ -24,7 +25,7 @@ public class Fallos {
 		
 		
 		System.out.println(String.format(
-				"Hola %s. Tienes %d años. \nEl programa terminó su ejecución", nombre, edad));
+				"Hola %s. Tienes %d años. El programa terminó su ejecución", nombre, edad));
 	}
 
 }
