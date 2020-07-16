@@ -1,11 +1,9 @@
 package com.cursojava.repaso.eventosteclado;
 
-import java.awt.Color;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
 import javax.swing.JFrame;
-import javax.swing.JPanel;
 
 public class EventosTeclado {
 
@@ -18,6 +16,11 @@ public class EventosTeclado {
 }
 
 class Frame extends JFrame {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 6411985258030218786L;
 
 	public Frame() {
 		this.setSize(600, 400);

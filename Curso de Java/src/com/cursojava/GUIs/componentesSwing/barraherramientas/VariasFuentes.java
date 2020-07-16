@@ -27,6 +27,10 @@ public class VariasFuentes {
 
 class Frame extends JFrame {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 4205317210078043212L;
 	JPanel panel;
 	JToolBar toolBar;
 

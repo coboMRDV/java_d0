@@ -20,6 +20,11 @@ public class UsoSpringLayout {
 
 class Frame extends JFrame {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 4298637050702033628L;
+
 	public Frame() {
 		this.setSize(400, 280);
 		this.setLocationRelativeTo(null);
@@ -31,6 +36,10 @@ class Frame extends JFrame {
 }
 
 class Panel extends JPanel {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 7375248210034077593L;
 	JButton btn1, btn2, btn3;
 
 	public Panel() {

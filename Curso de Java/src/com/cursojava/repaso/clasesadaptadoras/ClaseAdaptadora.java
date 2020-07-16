@@ -19,6 +19,12 @@ public class ClaseAdaptadora {
 
 class Frame extends JFrame {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -1957372704012808569L;
+
+
 	public Frame() {
 		this.setSize(600, 400);
 		this.setLocationRelativeTo(null);

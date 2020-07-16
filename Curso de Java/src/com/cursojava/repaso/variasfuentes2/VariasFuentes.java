@@ -23,6 +23,11 @@ public class VariasFuentes {
 
 class Frame extends JFrame {
 		
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -2214277423870605160L;
+
 	public Frame() {
 		this.setSize(600, 400);
 		this.setLocationRelativeTo(null);
@@ -32,6 +37,7 @@ class Frame extends JFrame {
 
 }
 
+@SuppressWarnings("serial")
 class Panel extends JPanel {
 	JButton btnRed,btnGreen, btnBlue;
 	

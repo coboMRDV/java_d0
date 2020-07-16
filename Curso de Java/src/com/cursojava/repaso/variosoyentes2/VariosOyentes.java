@@ -51,7 +51,7 @@ class Panel extends JPanel {
 
 		@Override
 		public void actionPerformed(ActionEvent arg0) {
-			NewFrame f = new NewFrame(btnCloseAll);
+			new NewFrame(btnCloseAll);
 		}
 
 	}
@@ -60,6 +60,10 @@ class Panel extends JPanel {
 
 class NewFrame extends JFrame {
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -8619226242963383762L;
 	public static int counter = 0;
 
 	public NewFrame(JButton btnCerrar) {

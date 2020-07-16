@@ -4,8 +4,6 @@ import java.awt.BasicStroke;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
-import java.awt.Stroke;
-
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
@@ -21,6 +19,11 @@ public class DibujeFrame {
 
 class Frame extends JFrame {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 8341481289162853198L;
+
 	public Frame() {
 		this.setSize(650, 450);
 		this.setLocationRelativeTo(null);
@@ -31,6 +34,11 @@ class Frame extends JFrame {
 }
 
 class Panel extends JPanel {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 4494666674009397597L;
 
 	public Panel() {
 		this.setBackground(new Color(80, 80, 80));

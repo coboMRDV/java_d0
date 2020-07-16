@@ -4,8 +4,6 @@ import java.awt.*;
 
 import javax.swing.*;
 
-import com.cobo.mylib.CbConstants;
-
 public class UsoBoxLayout {
 
 	public static void main(String[] args) {
@@ -17,6 +15,11 @@ public class UsoBoxLayout {
 }
 
 class Frame extends JFrame {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1020268689345422676L;
 
 	public Frame() {
 		this.setSize(400, 300);

@@ -19,6 +19,11 @@ public class CambiaIconoVentana {
 
 class Frame extends JFrame {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 7012047615725851162L;
+
 	public Frame() {
 		this.setSize(600, 400);
 		this.setLocationRelativeTo(null);
@@ -34,6 +39,11 @@ class Frame extends JFrame {
 }
 
 class Panel extends JPanel {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 235450491806875797L;
 
 	public Panel() {
 		this.setBackground(new Color(40, 40, 40));

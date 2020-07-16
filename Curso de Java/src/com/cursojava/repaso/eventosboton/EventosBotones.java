@@ -20,6 +20,11 @@ public class EventosBotones {
 
 
 class Frame extends JFrame{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -1437785199737786901L;
+
 	public Frame() {
 		this.setSize(400, 300);
 		this.setLocationRelativeTo(null);
@@ -30,6 +35,10 @@ class Frame extends JFrame{
 
 class Panel extends JPanel{
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -3285073155736279056L;
 	private final JButton btnRed, btnGreen, btnBlue;
 	
 	public Panel() {

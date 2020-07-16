@@ -19,6 +19,7 @@ public abstract class Persona {
 	
 	
 }//	 CLASE EMPLEADO ================================
+@SuppressWarnings("rawtypes")
 class Empleado extends Persona implements Comparable, ParaTrabajadores{
 	
 	private double sueldo;

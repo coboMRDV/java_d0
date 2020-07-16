@@ -7,7 +7,6 @@ import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
-import javax.swing.text.StyledEditorKit.FontSizeAction;
 
 
 
@@ -23,6 +22,11 @@ public class VariosOyentes {
 
 class Frame extends JFrame {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 4686054484743820180L;
+
 	public Frame() {
 		this.setBounds(1300, 100, 400, 300);
 
@@ -32,6 +36,10 @@ class Frame extends JFrame {
 }
 
 class Panel extends JPanel {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -5508339091735052404L;
 	private JButton btnNuevo, btnCerrar;
 
 	public Panel() {
@@ -49,7 +57,6 @@ class Panel extends JPanel {
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			NewFrame f = new NewFrame(btnCerrar);
 		}
 		
 	}
@@ -57,6 +64,10 @@ class Panel extends JPanel {
 
 class NewFrame extends JFrame {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 7419752933701604889L;
 	private static int contador = 0;
 
 	public NewFrame(JButton btnCerrar) {
