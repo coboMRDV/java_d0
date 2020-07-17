@@ -11,6 +11,8 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.KeyStroke;
 
+import com.cobo.mylib.CButton;
+
 public class VariasFuentes {
 
 	public static void main(String[] args) {
@@ -40,7 +42,7 @@ class Frame extends JFrame {
 @SuppressWarnings("serial")
 class Panel extends JPanel {
 	JButton btnRed,btnGreen, btnBlue;
-	
+	CButton btnNaranja;
 	public Panel() {
 		this.setBackground(new Color(40, 40, 40));
 		
@@ -48,10 +50,11 @@ class Panel extends JPanel {
 		ChangeBackGroundColor toRed = new ChangeBackGroundColor("Red", new Color(100, 40, 40));
 		ChangeBackGroundColor toGreen = new ChangeBackGroundColor("Green", new Color(40, 100, 40));
 		ChangeBackGroundColor toBlue = new ChangeBackGroundColor("Blue", new Color(40, 40, 100));
-		
+				
 		btnRed = new JButton(toRed);
 		btnGreen = new JButton(toGreen);
 		btnBlue = new JButton(toBlue);
+		
 		
 		this.add(btnRed);
 		this.add(btnGreen);

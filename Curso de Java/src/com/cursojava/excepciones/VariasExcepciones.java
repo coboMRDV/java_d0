@@ -8,7 +8,6 @@ public class VariasExcepciones {
 
 		try {
 			division();
-
 		} catch (ArithmeticException e) {
 			System.out.println("No se puede realizar división por 0");
 			JOptionPane.showMessageDialog(null, "No se puede realizar división por 0");
@@ -23,5 +22,4 @@ public class VariasExcepciones {
 		int num2 = Integer.parseInt(JOptionPane.showInputDialog("Introduce el divisor"));
 		System.out.println("El resultado es " + num1 / num2);
 	}
-
 }
