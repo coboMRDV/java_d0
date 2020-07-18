@@ -4,8 +4,6 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 
 import javax.swing.*;
-import javax.swing.text.StyledEditorKit;
-import javax.swing.text.StyledEditorKit.BoldAction;
 
 public class ActionTest {
 
@@ -18,6 +16,10 @@ public class ActionTest {
 }
 
 class Frame extends JFrame {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 288208352719254066L;
 	JPanel topPanel, bottomPanel;
 	JMenuBar menuBar;
 	JMenu menuFont, menuStyle, menuSize;
@@ -120,6 +122,11 @@ class Frame extends JFrame {
 	 */
 	class EditorActionListenerHandler extends AbstractAction {
 		
+		/**
+		 * 
+		 */
+		private static final long serialVersionUID = 7821864369946502760L;
+
 		public EditorActionListenerHandler(String actionName, String menuName) {
 			putValue(AbstractAction.NAME, actionName);
 }

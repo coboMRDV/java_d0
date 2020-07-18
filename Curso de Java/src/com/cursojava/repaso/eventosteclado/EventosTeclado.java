@@ -42,7 +42,7 @@ class KeyEventsHandler implements KeyListener{
 			System.out.println("You have pressed 'J'");
 		}
 		
-		System.out.println("Has pulsado la tecla " + e.getKeyText(e.getKeyCode()));
+		System.out.println("Has pulsado la tecla " + KeyEvent.getKeyText(e.getKeyCode()));
 		
 		
 		

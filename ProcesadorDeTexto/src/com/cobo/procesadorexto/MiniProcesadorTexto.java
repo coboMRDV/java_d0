@@ -3,15 +3,9 @@ package com.cobo.procesadorexto;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
-import java.awt.Dimension;
 import java.awt.Font;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-
-import javax.swing.AbstractAction;
 import javax.swing.ActionMap;
 import javax.swing.BorderFactory;
-import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.InputMap;
 import javax.swing.JFrame;
@@ -25,9 +19,8 @@ import javax.swing.JToolBar;
 import javax.swing.KeyStroke;
 import javax.swing.SwingConstants;
 import javax.swing.text.StyledEditorKit;
-import javax.swing.text.StyledEditorKit.BoldAction;
 
-public class ProcesadorTexto {
+public class MiniProcesadorTexto {
 	/*
 	 * necesito una barra de herramientas arriba con los menús a a la izquierda
 	 * topPanel - borderlayout 
@@ -63,6 +56,10 @@ public class ProcesadorTexto {
 
 class Frame extends JFrame{
 		
+		/**
+	 * 
+	 */
+	private static final long serialVersionUID = -7677960811621884671L;
 		private JPanel bottomPanel;
 		private JMenuBar menuBar;
 		private JMenu font, style, size;
@@ -71,8 +68,6 @@ class Frame extends JFrame{
 		private JMenuItem size16, size18, size24, size28;
 		private JScrollPane scrollPane;
 		private JTextPane text;
-		private JToolBar toolBar;
-		
 		public Frame() {
 			createFrame();
 		}
@@ -148,11 +143,11 @@ class Frame extends JFrame{
 			text = new JTextPane();
 			text.setFont(new Font("Arial", Font.PLAIN, 16));
 			text.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
-			text.setText(
-					"I must not fear. Fear is the mind-killer. Fear is the little-death that brings total obliteration.\r\n" + 
-					"I will face my fear. I will permit it to pass over me and through me.\r\n" + 
-					"And when it has gone past I will turn the inner eye to see its path.\r\n" + 
-					"Where the fear has gone there will be nothing. Only I will remain.");
+//			text.setText(
+//					"I must not fear. Fear is the mind-killer. Fear is the little-death that brings total obliteration.\r\n" + 
+//					"I will face my fear. I will permit it to pass over me and through me.\r\n" + 
+//					"And when it has gone past I will turn the inner eye to see its path.\r\n" + 
+//					"Where the fear has gone there will be nothing. Only I will remain.");
 			
 			
 			scrollPane = new JScrollPane(text);
@@ -164,9 +159,9 @@ class Frame extends JFrame{
 			toolBar.setAlignmentX(JToolBar.LEFT_ALIGNMENT);
 					
 			/* ================= color buttons ================ */
-			JMenuItem tbRed = new JMenuItem(new ImageIcon("src/redIcon.png"));
-			JMenuItem tbGreen = new JMenuItem(new ImageIcon("src/greenIcon.png"));
-			JMenuItem tbBlue = new JMenuItem(new ImageIcon("src/blueIcon.png"));
+			JMenuItem tbRed = new JMenuItem(new ImageIcon("src/icons/redIcon.png"));
+			JMenuItem tbGreen = new JMenuItem(new ImageIcon("src/icons/greenIcon.png"));
+			JMenuItem tbBlue = new JMenuItem(new ImageIcon("src/icons/blueIcon.png"));
 
 			tbRed.addActionListener(new StyledEditorKit.ForegroundAction("redAction", new Color(100, 40, 40)));
 			tbGreen.addActionListener(new StyledEditorKit.ForegroundAction("greenAction", new Color(40, 100, 40)));
@@ -176,8 +171,8 @@ class Frame extends JFrame{
 			toolBar.add(tbBlue);
 			toolBar.addSeparator();
 			/* ================= style buttons ================ */
-			JMenuItem tbBold = new JMenuItem(new ImageIcon("src/bold.png"));
-			JMenuItem tbItalic = new JMenuItem(new ImageIcon("src/italic.png"));
+			JMenuItem tbBold = new JMenuItem(new ImageIcon("src/icons/bold.png"));
+			JMenuItem tbItalic = new JMenuItem(new ImageIcon("src/icons/italic.png"));
 			tbBold.addActionListener(new StyledEditorKit.BoldAction());
 			tbItalic.addActionListener(new StyledEditorKit.ItalicAction());
 			toolBar.add(tbBold);
@@ -185,9 +180,9 @@ class Frame extends JFrame{
 
 			toolBar.addSeparator();
 			/* ================= alignement buttons ================ */
-			JMenuItem tbLeft= new JMenuItem(new ImageIcon("src/left.png"));
-			JMenuItem tbCenter= new JMenuItem(new ImageIcon("src/center.png"));
-			JMenuItem tbRight= new JMenuItem(new ImageIcon("src/right.png"));
+			JMenuItem tbLeft= new JMenuItem(new ImageIcon("src/icons/left.png"));
+			JMenuItem tbCenter= new JMenuItem(new ImageIcon("src/icons/center.png"));
+			JMenuItem tbRight= new JMenuItem(new ImageIcon("src/icons/right.png"));
 			tbLeft.addActionListener(new StyledEditorKit.AlignmentAction("left", SwingConstants.CENTER));
 			tbCenter.addActionListener(new StyledEditorKit.AlignmentAction("center", SwingConstants.RIGHT));
 			tbRight.addActionListener(new StyledEditorKit.AlignmentAction("right", SwingConstants.LEFT));
