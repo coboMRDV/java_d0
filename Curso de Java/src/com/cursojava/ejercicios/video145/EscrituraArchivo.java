@@ -99,12 +99,7 @@ default:
 			
 		}
 		
-		
-		public void clearTextArea() {
-			txtArea.setText("");
-		}
-		
-		
+				
 		public void readFile() {
 			try {
 				BufferedReader reader = 
@@ -127,6 +122,12 @@ default:
 				e.printStackTrace();
 			} 
 		}
+		
+		
+		public void clearTextArea() {
+			txtArea.setText("");
+		}
+		
 
 	}
 }
