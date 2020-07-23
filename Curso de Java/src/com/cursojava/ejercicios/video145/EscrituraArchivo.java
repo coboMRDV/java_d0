@@ -28,6 +28,10 @@ public class EscrituraArchivo {
 
 class Frame extends JFrame {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private JTextArea txtArea;
 	private JButton btnWrite, btnRead, btnDelete;
 

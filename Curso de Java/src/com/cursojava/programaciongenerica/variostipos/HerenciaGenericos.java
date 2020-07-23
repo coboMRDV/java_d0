@@ -10,8 +10,6 @@ public class HerenciaGenericos {
 //		
 //		empleado15248 = sara;
 		
-		VariosTipos<Empleado> empleado15248 = new VariosTipos<Empleado>(); 
-		
 		VariosTipos<Jefe> sara = new VariosTipos<Jefe>();
 		
 		VariosTipos.imprimirTrabajador(sara);

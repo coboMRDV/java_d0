@@ -13,7 +13,7 @@ public class MetodosGenericos {
 
 class ExaminaArrays {
 
-	public static <T extends Comparable> T getMenor(T[] elArray) {
+	public static <T extends Comparable<?>> T getMenor(T[] elArray) {
 
 		T menor = elArray[0];
 

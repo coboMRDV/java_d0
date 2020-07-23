@@ -20,9 +20,7 @@ public class AccesoArchivos {
 				
 				File f = new File(archivo.getAbsolutePath(), file);
 				if(f.isDirectory()) {
-//					System.out.println(String.format("%s es un directorio", f));
-					String[] subcarpeta = f.list();
-					for (String a : files) {
+for (String a : files) {
 						System.out.println("\t" + a);
 					}
 				}

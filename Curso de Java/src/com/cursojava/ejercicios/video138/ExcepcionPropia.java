@@ -23,6 +23,11 @@ public class ExcepcionPropia {
 	
 class NumOutOfRangeException extends RuntimeException{
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	public NumOutOfRangeException() {
 		
 	}

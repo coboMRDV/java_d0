@@ -1,7 +1,5 @@
 package com.cursojava.ejercicios.video135;
 
-import java.awt.HeadlessException;
-
 import javax.swing.JOptionPane;
 
 public class ControlExcepciones {

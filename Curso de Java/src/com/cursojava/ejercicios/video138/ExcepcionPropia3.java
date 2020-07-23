@@ -25,6 +25,11 @@ public class ExcepcionPropia3 {
 	
 class MyException extends RuntimeException{
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	public MyException() {
 		
 	}
