@@ -41,7 +41,7 @@ class Banco {
 			System.out.println(Thread.currentThread());
 
 			cuentas[cuentaOrigen] -= cantidad;
-			System.out.printf("%10.2f€ desde la cuenta [%d] a la cuenta [%d]\n", cantidad, cuentaOrigen, cuentaDestino);
+			System.out.printf("%10.2f€ desde la cuenta [%d] a la cuenta [%d]", cantidad, cuentaOrigen, cuentaDestino);
 			System.out.println();
 			cuentas[cuentaDestino] += cantidad;
 
