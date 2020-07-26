@@ -18,9 +18,9 @@ class ExaminaArrays {
 		T menor = elArray[0];
 
 		for (int i = 1; i < elArray.length; i++) {
-			if (menor.compareTo(elArray[i]) > 0) {
-				menor = elArray[i];
-			}
+//			if (menor.compareTo(elArray[i]) > 0) {
+//				menor = elArray[i];
+//			}
 		}
 		return menor;
 	}

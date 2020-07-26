@@ -41,6 +41,7 @@ class Servidor extends JFrame implements Runnable {
 	public void run() {
 		
 		try {
+			@SuppressWarnings("resource")
 			ServerSocket miServidor = new ServerSocket(9999); 	// Puerto a la escucha
 			
 			while(true) {
@@ -54,6 +55,7 @@ class Servidor extends JFrame implements Runnable {
 				
 				txtArea.append(mensajeTexto + "\n");
 				miSocket.close();
+				
 			}
 			
 
